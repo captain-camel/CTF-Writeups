@@ -1,3 +1,4 @@
+# Outdated
 
 > I found this old website that runs your python code, but the security hasn't been updated in years
 > I'm sure there's a flag floating around, can you find it?
@@ -16,6 +17,7 @@ There are a few other checks, including one that blocks non-ASCII characters, an
 
 <details>
 <summary>Full `app.py`</summary>
+    
 ``` python
 from flask import Flask, request, render_template, redirect
 from ast import parse
@@ -117,6 +119,8 @@ if __name__ == '__main__':
 </details>
 
 Sidenote: when I was solving this challenge I didn't realize the source code was provided, which didn't make a big difference but did lead to me wasting some time experimenting with which keywords were blocked.
+
+## Solution
 
 Most of the obvious solutions are prevented by the blocked keywords, and lack of imports. 
 

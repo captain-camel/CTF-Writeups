@@ -258,7 +258,7 @@ We can now go back to `l2`. We only have one for loop left, so we'll put both li
 
 ``` python
 def decrypt(inp):
-    # ...
+	# ...
     
     l2 = [0]*n
     
@@ -266,9 +266,9 @@ def decrypt(inp):
         l2[i] = (l[i]*5+(l2[i]+n)*l[i])%l[i]
         l2[i] += inp[i]
     
-	l2[0] +=int(recur(l2[1:])*50)
+    l2[0] +=int(recur(l2[1:])*50)
     
-	# ...
+    # ...
 ```
 
 All that's left is returning the flag, and we have the final `decrypt` function:
@@ -365,4 +365,7 @@ def main():
 main()
 ```
 
-Running this gives the flag: `tjctf{unshuffling_scripts_xdfj}`
+Running this gives the flag:
+```
+tjctf{unshuffling_scripts_xdfj}
+```

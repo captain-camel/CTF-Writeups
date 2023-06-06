@@ -30,7 +30,7 @@ print(object.__subclasses__())
 
 This returned a long list of classes to look through. I ended up just `CMD+F`ing for `os` to try to find any classes of interest, and the only result was `os._wrap_close`.
 
-I tried googling this class since I had no idea was it was, but surprisingly I found absolutely zero information about it, so I'm still not sure what it really is. However I did find [one useful page](https://blog.p6.is/Python-SSTI-exploitable-classes/) detailing how it could be exploited.
+I tried googling this class since I had no idea was it was, but surprisingly I found absolutely zero information about it, so I'm still not sure what it really is. ~~However I did find [one useful page](https://blog.p6.is/Python-SSTI-exploitable-classes/) detailing how it could be exploited.~~ **Edit:** The website now seems to be down :(
 
 From that page:
 

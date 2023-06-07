@@ -258,7 +258,7 @@ We can now go back to `l2`. We only have one for loop left, so we'll put both li
 
 ``` python
 def decrypt(inp):
-	# ...
+    # ...
     
     l2 = [0]*n
     
@@ -275,11 +275,11 @@ All that's left is returning the flag, and we have the final `decrypt` function:
 
 ``` python
 def decrypt(inp):
-	n = len(inp)
+    n = len(inp)
     
-	l = []
+    l = []
     
-	for i in range(n):
+    for i in range(n):
         l.append(random.randint(6, 420))
     assert(len(l)==n)
     

@@ -57,13 +57,13 @@ seed = 1000
 random.seed(seed)
 
 def recur(lst):
-	# todo
+    # todo
 
 def decrypt(inp):
-	# todo
+    # todo
 
 def main():
-	# todo
+    # todo
 
 main()
 ```
@@ -74,7 +74,7 @@ Based on its name, I assume that `recur` is a recursive function. Therefore, I m
 
 ``` python
 def recur(lst):
-	return recur(lst[::2])/recur(lst[1::2])
+    return recur(lst[::2])/recur(lst[1::2])
 ```
 
 We can determine what other lines belong in this function by looking at which variables they access. `recur` defines the parameter `lst`, so I searched through the code for any occurrences of this identifier.
